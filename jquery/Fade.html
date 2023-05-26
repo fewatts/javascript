@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("h1").css("display", "none");
+            $("#exibir").click(function(){
+                $("h1").fadeIn();
+            });
+            $("#ocultar").click(function(){
+                $("h1").fadeOut();
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="ocultar">ocultar</button>
+    <button id="exibir">exibir</button>
+    <hr>
+    <h1>Learning Jquery</h1>
+</body>
+</html>
